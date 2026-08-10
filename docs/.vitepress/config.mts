@@ -43,6 +43,9 @@ export default defineConfig({
           items: [
             { text: '教材首页与学习方法', link: '/textbook/' },
             { text: '第一册：数学与工程基础', link: '/textbook/volume-1-foundations' },
+            { text: '第一册扩展：数学与优化', link: '/textbook/volume-1-math-deep-dive' },
+            { text: '第一册扩展：工程与 ROS2', link: '/textbook/volume-1-engineering-deep-dive' },
+            { text: '第一册扩展：ROS2 实战案例', link: '/textbook/volume-1-ros2-practice' },
             { text: '第一册实验与答案', link: '/textbook/volume-1-labs' },
             { text: '第二册：视觉与三维感知', link: '/textbook/volume-2-perception' },
             { text: '第三册：SLAM 与导航', link: '/textbook/volume-3-slam-navigation' },
@@ -69,5 +72,5 @@ export default defineConfig({
   head: [
     ['link', { rel: 'icon', href: '/img/avatar.png' }]
   ],
-  markdown: { lineNumbers: true }
+  markdown: { lineNumbers: true, math: true }
 })
