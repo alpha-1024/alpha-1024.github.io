@@ -47,7 +47,12 @@ export default defineConfig({
             { text: '第二册：视觉与三维感知', link: '/textbook/volume-2-perception' },
             { text: '第三册：SLAM 与导航', link: '/textbook/volume-3-slam-navigation' },
             { text: '第三册实验与答案', link: '/textbook/volume-3-labs' },
-            { text: '第四册：机械臂规划与控制', link: '/textbook/volume-4-manipulation' }
+            { text: '第四册：机械臂规划与控制', link: '/textbook/volume-4-manipulation' },
+            { text: '第五册：强化学习与 VLA', link: '/textbook/volume-5-learning-vla' },
+            { text: '第五册实验与答案', link: '/textbook/volume-5-labs' },
+            { text: '第六册：CUDA 与部署', link: '/textbook/volume-6-deployment' },
+            { text: '第六册实验与验收', link: '/textbook/volume-6-labs' },
+            { text: '术语表与毕业清单', link: '/textbook/glossary-capstone' }
           ]
         }
       ]
