@@ -43,7 +43,8 @@ export default defineConfig({
           items: [
             { text: '教材首页与学习方法', link: '/textbook/' },
             { text: '第一册：数学与工程基础', link: '/textbook/volume-1-foundations' },
-            { text: '第一册实验与答案', link: '/textbook/volume-1-labs' }
+            { text: '第一册实验与答案', link: '/textbook/volume-1-labs' },
+            { text: '第二册：视觉与三维感知', link: '/textbook/volume-2-perception' }
           ]
         }
       ]
