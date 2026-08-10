@@ -42,13 +42,19 @@ export default defineConfig({
           text: '具身智能算法教材',
           items: [
             { text: '教材首页与学习方法', link: '/textbook/' },
-            { text: '第一册：数学与工程基础', link: '/textbook/volume-1-foundations' },
-            { text: '第一册扩展：数学与优化', link: '/textbook/volume-1-math-deep-dive' },
-            { text: '第一册扩展：工程与 ROS2', link: '/textbook/volume-1-engineering-deep-dive' },
-            { text: '第一册扩展：ROS2 实战案例', link: '/textbook/volume-1-ros2-practice' },
-            { text: '第一册：数学例题与考试', link: '/textbook/volume-1-math-workbook' },
-            { text: '第一册：编程综合实验', link: '/textbook/volume-1-programming-workbook' },
-            { text: '第一册实验与答案', link: '/textbook/volume-1-labs' },
+            {
+              text: '第一册：数学、编程与 ROS2 基础',
+              collapsed: true,
+              items: [
+                { text: '主教材：数学与工程基础', link: '/textbook/volume-1-foundations' },
+                { text: '机器人数学与优化', link: '/textbook/volume-1-math-deep-dive' },
+                { text: 'PyTorch 工程与 ROS2', link: '/textbook/volume-1-engineering-deep-dive' },
+                { text: 'ROS2 实战案例', link: '/textbook/volume-1-ros2-practice' },
+                { text: '数学例题与阶段考试', link: '/textbook/volume-1-math-workbook' },
+                { text: '编程综合实验', link: '/textbook/volume-1-programming-workbook' },
+                { text: '综合实验与答案', link: '/textbook/volume-1-labs' }
+              ]
+            },
             { text: '第二册：视觉与三维感知', link: '/textbook/volume-2-perception' },
             { text: '第三册：SLAM 与导航', link: '/textbook/volume-3-slam-navigation' },
             { text: '第三册实验与答案', link: '/textbook/volume-3-labs' },
