@@ -34,12 +34,12 @@ onUnmounted(() => document.documentElement.classList.remove('resume-layout-activ
 
     <div class="resume-grid">
       <aside class="resume-sidebar">
-        <section class="resume-card"><h3>联系方式</h3><dl><dt>GitHub</dt><dd><a href="https://github.com/alpha-1024">alpha-1024</a></dd><dt>Email</dt><dd>your-email@example.com</dd><dt>所在地</dt><dd>中国 · 远程协作</dd></dl></section>
+        <section class="resume-card"><h3>联系方式</h3><dl><dt>GitHub</dt><dd><a href="https://github.com/alpha-1024">alpha-1024</a></dd><dt>Email</dt><dd>2051059438@qq.com</dd><dt>所在地</dt><dd>中国 · 山东</dd></dl></section>
         <section class="resume-card"><h3>专业技能</h3><h4>嵌入式与硬件</h4><div class="skill-tags"><span>C / C++</span><span>STM32</span><span>FreeRTOS</span><span>串口调试</span><span>GPIO</span></div><h4>Linux 与工具</h4><div class="skill-tags"><span>Linux</span><span>Shell</span><span>Git</span><span>Docker</span><span>VitePress</span></div><h4>机器人方向</h4><div class="skill-tags"><span>ROS2</span><span>SLAM</span><span>导航</span><span>传感器</span></div></section>
       </aside>
 
       <main class="resume-main">
-        <section class="resume-card resume-section"><h3>教育背景</h3><div class="resume-entry"><time>持续学习</time><div><strong>嵌入式与机器人系统</strong><p>围绕 Linux、树莓派、STM32 与 ROS2 建立从硬件到应用层的完整实践。</p></div></div><div class="resume-entry"><time>现在</time><div><strong>个人技术博客</strong><p>使用 Markdown 编写，通过 GitHub 管理内容，部署在 GitHub Pages。</p></div></div></section>
+        <section class="resume-card resume-section"><h3>教育背景</h3><div class="resume-entry"><time>2023.9 - 2027.6</time><div><strong>齐鲁师范学院</strong><p><strong>信息科学与工程学院 · 计算机科学与技术专业</strong></p><p>围绕 Linux、树莓派、STM32 与 ROS2 建立从硬件到应用层的完整实践。</p></div></div><div class="resume-entry"><time>现在</time><div><strong>个人技术博客</strong><p>使用 Markdown 编写，通过 GitHub 管理内容，部署在 GitHub Pages。</p></div></div></section>
         <section class="resume-card resume-section"><h3>项目经历</h3><div class="resume-entry"><time>2025</time><div><strong>树莓派 Linux 配置与维护</strong><p>整理串口登录、GPIO 检查、磁盘分区扩展等常见问题，形成可执行的配置教程。</p></div></div><div class="resume-entry"><time>持续</time><div><strong>技术博客重构</strong><p>将旧 Hexo 静态导出迁移到 VitePress，使用 GitHub Actions 自动构建和发布。</p></div></div></section>
         <section class="resume-card resume-section"><h3>技术理念</h3><ul class="resume-list"><li>先复现问题，再记录最小可行的解决步骤。</li><li>让命令、配置和验证方式都可以被读者直接复用。</li><li>保持内容简洁，持续修订，而不是一次性写完。</li></ul></section>
       </main>
