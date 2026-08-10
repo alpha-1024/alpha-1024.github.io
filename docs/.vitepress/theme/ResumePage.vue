@@ -1,3 +1,10 @@
+<script setup lang="ts">
+import { onMounted, onUnmounted } from 'vue'
+
+onMounted(() => document.documentElement.classList.add('resume-layout-active'))
+onUnmounted(() => document.documentElement.classList.remove('resume-layout-active'))
+</script>
+
 <template>
   <div class="resume-page">
     <section class="resume-hero">

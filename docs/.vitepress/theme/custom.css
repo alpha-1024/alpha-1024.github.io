@@ -36,10 +36,10 @@
 .sidebar-collapsed .VPSidebar { transform: translateX(-100%); }
 .sidebar-collapsed .sidebar-toggle { left: 0; }
 .sidebar-collapsed .VPContent { padding-left: 0; }
-.VPDoc:has(.resume-page) .container { display: block; max-width: none; }
-.VPDoc:has(.resume-page) .content-container { max-width: none; }
-.VPDoc:has(.resume-page) .content { min-width: 0; max-width: none; padding-left: 0; padding-right: 0; }
-.VPDoc:has(.resume-page) .aside { display: none; }
+.resume-layout-active .VPDoc .container { display: block; max-width: none !important; }
+.resume-layout-active .VPDoc .content-container { max-width: none !important; }
+.resume-layout-active .VPDoc .content { min-width: 0; max-width: none !important; padding-left: 0; padding-right: 0; }
+.resume-layout-active .VPDoc .aside { display: none !important; }
 .resume-page { width: 100%; max-width: 1500px; margin: 0 auto; color: var(--vp-c-text-1); }
 .resume-hero { display: grid; grid-template-columns: 1fr 250px; gap: 32px; align-items: stretch; padding: 28px; margin-bottom: 14px; border: 1px solid var(--vp-c-divider); border-radius: 8px; background: linear-gradient(135deg, var(--vp-c-bg-alt), var(--vp-c-bg)); }
 .resume-langs { display: inline-flex; gap: 4px; padding: 4px; margin-bottom: 30px; border: 1px solid var(--vp-c-divider); border-radius: 7px; background: var(--vp-c-bg); font-size: 12px; font-weight: 650; }
