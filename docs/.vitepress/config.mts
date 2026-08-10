@@ -5,6 +5,7 @@ export default defineConfig({
   title: '破晓的历程',
   description: '记录嵌入式、Linux 与工程实践的个人技术博客',
   cleanUrls: true,
+  appearance: false,
   lastUpdated: true,
   themeConfig: {
     logo: '/img/avatar.png',

@@ -5,8 +5,8 @@
   --vp-c-bg: #fafaf9;
   --vp-c-bg-alt: #f5f5f4;
   --vp-font-family-base: "Inter", "Noto Sans SC", system-ui, sans-serif;
-  --vp-sidebar-width: 280px;
-  --vp-layout-max-width: 1320px;
+  --vp-sidebar-width: 240px;
+  --vp-layout-max-width: 1600px;
 }
 .dark { --vp-c-bg: #171a19; --vp-c-bg-alt: #202523; }
 .VPNavBar { border-bottom: 1px solid #e7e5e4; }
@@ -21,8 +21,8 @@
 .VPNavBar .content { max-width: none; }
 .VPNavBarMenuLink { color: var(--vp-c-text-2); }
 .VPNavBarMenuLink[href*="github"] { color: var(--vp-c-brand-1); }
-.VPContent { max-width: 980px; }
-.VPDoc { padding: 40px 40px 80px; }
+.VPContent { max-width: none; }
+.VPDoc { padding: 48px 40px 80px; }
 .vp-doc h1 { font-size: 44px; font-weight: 400; letter-spacing: 0; }
 .vp-doc h2 { font-size: 28px; font-weight: 500; }
 .vp-doc table { display: table; width: 100%; border-collapse: collapse; box-shadow: 0 4px 16px rgba(28, 25, 23, .08); border-radius: 7px; overflow: hidden; }
@@ -35,7 +35,7 @@
 .sidebar-collapsed { --vp-sidebar-width: 0px; }
 .sidebar-collapsed .VPSidebar { transform: translateX(-100%); }
 .sidebar-collapsed .sidebar-toggle { left: 0; }
-.sidebar-collapsed .VPContent { padding-left: 32px; }
+.sidebar-collapsed .VPContent { padding-left: 0; }
 .VPHomeHero .name { letter-spacing: 0; }
 .VPHomeHero .text { max-width: 720px; }
 .VPHomeHero .image { filter: saturate(.8); }
