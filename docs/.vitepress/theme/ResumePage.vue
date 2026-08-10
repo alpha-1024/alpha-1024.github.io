@@ -27,7 +27,7 @@ onUnmounted(() => document.documentElement.classList.remove('resume-layout-activ
         <p class="resume-accent">Embedded · Linux · Robotics</p>
         <p class="resume-intro">{{ text.intro }}</p>
       </div>
-      <div class="resume-profile"><img src="/img/avatar.png" alt="alpha-1024" /><strong>{{ text.profile }}</strong><span>{{ text.profileSub }}</span></div>
+      <div class="resume-profile"><img src="/img/geren.jpg" alt="alpha-1024" /><strong>{{ text.profile }}</strong><span>{{ text.profileSub }}</span></div>
     </section>
 
     <section class="resume-stats" aria-label="个人概览"><div><strong>3+</strong><span>{{ text.stats[0] }}</span></div><div><strong>持续</strong><span>{{ text.stats[1] }}</span></div><div><strong>Markdown</strong><span>{{ text.stats[2] }}</span></div><div><strong>GitHub</strong><span>{{ text.stats[3] }}</span></div></section>
