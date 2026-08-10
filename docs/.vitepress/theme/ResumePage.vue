@@ -1,7 +1,18 @@
 <script setup lang="ts">
-import { onMounted, onUnmounted } from 'vue'
+import { computed, onMounted, onUnmounted, ref } from 'vue'
+
+type Language = 'zh-CN' | 'zh-TW' | 'en'
+const language = ref<Language>('zh-CN')
+const copy = {
+  'zh-CN': { role: '嵌入式与 Linux 工程实践方向', intro: '长期记录树莓派、Linux、嵌入式开发与工程工具的实践经验，关注系统配置、硬件调试、机器人软件和可复用的工程方法。', profile: '技术博客作者', profileSub: '嵌入式 / Linux / 机器人', contact: '联系方式', skills: '专业技能', education: '教育背景', projects: '项目经历', ideas: '技术理念', stats: ['技术方向', '记录与维护', '写作方式', '开源协作'] },
+  'zh-TW': { role: '嵌入式與 Linux 工程實踐方向', intro: '長期記錄樹莓派、Linux、嵌入式開發與工程工具的實踐經驗，關注系統配置、硬件調試、機器人軟件和可復用的工程方法。', profile: '技術博客作者', profileSub: '嵌入式 / Linux / 機器人', contact: '聯繫方式', skills: '專業技能', education: '教育背景', projects: '項目經歷', ideas: '技術理念', stats: ['技術方向', '記錄與維護', '寫作方式', '開源協作'] },
+  en: { role: 'Embedded & Linux Engineering', intro: 'A practical notebook covering Raspberry Pi, Linux, embedded development, hardware debugging, and reusable engineering methods.', profile: 'Technical Blogger', profileSub: 'Embedded / Linux / Robotics', contact: 'Contact', skills: 'Skills', education: 'Education', projects: 'Projects', ideas: 'Principles', stats: ['Focus areas', 'Maintained', 'Writing', 'Open source'] }
+} as const
+const text = computed(() => copy[language.value])
+function setLanguage(next: Language) { language.value = next; document.documentElement.lang = next; localStorage.setItem('resume-language', next) }
 
 onMounted(() => document.documentElement.classList.add('resume-layout-active'))
+onMounted(() => { const saved = localStorage.getItem('resume-language') as Language | null; if (saved && saved in copy) language.value = saved })
 onUnmounted(() => document.documentElement.classList.remove('resume-layout-active'))
 </script>
 
@@ -9,17 +20,17 @@ onUnmounted(() => document.documentElement.classList.remove('resume-layout-activ
   <div class="resume-page">
     <section class="resume-hero">
       <div class="resume-hero-copy">
-        <div class="resume-langs"><span class="active">简体中文</span><span>繁體中文</span><span>English</span></div>
+        <div class="resume-langs"><button :class="{ active: language === 'zh-CN' }" @click="setLanguage('zh-CN')">简体中文</button><button :class="{ active: language === 'zh-TW' }" @click="setLanguage('zh-TW')">繁體中文</button><button :class="{ active: language === 'en' }" @click="setLanguage('en')">English</button></div>
         <p class="resume-kicker">PERSONAL RESUME</p>
         <h1>alpha-1024</h1>
-        <h2>嵌入式与 Linux 工程实践方向</h2>
+        <h2>{{ text.role }}</h2>
         <p class="resume-accent">Embedded · Linux · Robotics</p>
-        <p class="resume-intro">长期记录树莓派、Linux、嵌入式开发与工程工具的实践经验，关注系统配置、硬件调试、机器人软件和可复用的工程方法。</p>
+        <p class="resume-intro">{{ text.intro }}</p>
       </div>
-      <div class="resume-profile"><img src="/img/avatar.png" alt="alpha-1024" /><strong>Technical Blogger</strong><span>Embedded / Linux / Robotics</span></div>
+      <div class="resume-profile"><img src="/img/avatar.png" alt="alpha-1024" /><strong>{{ text.profile }}</strong><span>{{ text.profileSub }}</span></div>
     </section>
 
-    <section class="resume-stats" aria-label="个人概览"><div><strong>3+</strong><span>技术方向</span></div><div><strong>持续</strong><span>记录与维护</span></div><div><strong>Markdown</strong><span>写作方式</span></div><div><strong>GitHub</strong><span>开源协作</span></div></section>
+    <section class="resume-stats" aria-label="个人概览"><div><strong>3+</strong><span>{{ text.stats[0] }}</span></div><div><strong>持续</strong><span>{{ text.stats[1] }}</span></div><div><strong>Markdown</strong><span>{{ text.stats[2] }}</span></div><div><strong>GitHub</strong><span>{{ text.stats[3] }}</span></div></section>
 
     <div class="resume-grid">
       <aside class="resume-sidebar">

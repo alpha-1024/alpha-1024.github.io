@@ -43,8 +43,9 @@
 .resume-page { width: 100%; max-width: 1500px; margin: 0 auto; color: var(--vp-c-text-1); }
 .resume-hero { display: grid; grid-template-columns: 1fr 250px; gap: 32px; align-items: stretch; padding: 28px; margin-bottom: 14px; border: 1px solid var(--vp-c-divider); border-radius: 8px; background: linear-gradient(135deg, var(--vp-c-bg-alt), var(--vp-c-bg)); }
 .resume-langs { display: inline-flex; gap: 4px; padding: 4px; margin-bottom: 30px; border: 1px solid var(--vp-c-divider); border-radius: 7px; background: var(--vp-c-bg); font-size: 12px; font-weight: 650; }
-.resume-langs span { padding: 7px 10px; border-radius: 5px; color: var(--vp-c-text-2); }
-.resume-langs .active { background: var(--vp-c-brand-1); color: #fff; }
+.resume-langs button { padding: 7px 10px; border: 0; border-radius: 5px; background: transparent; color: var(--vp-c-text-2); font: inherit; font-size: 12px; font-weight: 650; cursor: pointer; }
+.resume-langs button:hover { color: var(--vp-c-brand-1); }
+.resume-langs button.active { background: var(--vp-c-brand-1); color: #fff; }
 .resume-kicker { margin: 0 0 8px; color: var(--vp-c-brand-1); font-size: 11px; font-weight: 750; letter-spacing: .06em; }
 .resume-hero h1 { margin: 0; font-size: 42px; line-height: 1.1; letter-spacing: 0; }
 .resume-hero h2 { margin: 8px 0; font-size: 20px; border: 0; padding: 0; }
