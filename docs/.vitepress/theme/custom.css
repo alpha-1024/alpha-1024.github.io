@@ -1,0 +1,44 @@
+:root {
+  --vp-c-brand-1: #0f766e;
+  --vp-c-brand-2: #0d9488;
+  --vp-c-brand-3: #14b8a6;
+  --vp-c-bg: #fafaf9;
+  --vp-c-bg-alt: #f5f5f4;
+  --vp-font-family-base: "Inter", "Noto Sans SC", system-ui, sans-serif;
+  --vp-sidebar-width: 300px;
+  --vp-layout-max-width: 1320px;
+}
+.dark { --vp-c-bg: #171a19; --vp-c-bg-alt: #202523; }
+.VPNavBar { border-bottom: 1px solid #e7e5e4; }
+.VPNavBarTitle .title { font-weight: 500; letter-spacing: 0; font-size: 24px; line-height: 1.1; }
+.VPNavBarTitle { min-width: 300px; }
+.VPNavBarTitle .logo { width: 0; margin: 0; }
+.VPSidebar { background: #f4f5fa; border-right: 1px solid #e8e8ee; padding-top: 100px; }
+.dark .VPSidebar { background: #202321; border-color: #303532; }
+.VPSidebarItem.level-0 > .item > .text { color: var(--vp-c-brand-1); font-size: 17px; font-weight: 500; }
+.VPSidebarItem.level-1 > .item > .text { font-weight: 650; }
+.VPSidebarItem .item { border-radius: 0; }
+.VPNavBar .content { max-width: none; }
+.VPNavBarMenuLink { color: var(--vp-c-text-2); }
+.VPNavBarMenuLink[href*="github"] { color: var(--vp-c-brand-1); }
+.VPContent { max-width: 980px; }
+.VPDoc { padding: 40px 40px 80px; }
+.vp-doc h1 { font-size: 44px; font-weight: 400; letter-spacing: 0; }
+.vp-doc h2 { font-size: 28px; font-weight: 500; }
+.vp-doc table { display: table; width: 100%; border-collapse: collapse; box-shadow: 0 4px 16px rgba(28, 25, 23, .08); border-radius: 7px; overflow: hidden; }
+.vp-doc tr { background: var(--vp-c-bg); }
+.vp-doc th { background: var(--vp-c-bg-alt); text-align: left; font-weight: 650; }
+.vp-doc th, .vp-doc td { border: 1px solid var(--vp-c-divider); padding: 12px 16px; }
+.VPFooter { border-top: 1px solid var(--vp-c-divider); }
+.VPHomeHero .name { letter-spacing: 0; }
+.VPHomeHero .text { max-width: 720px; }
+.VPHomeHero .image { filter: saturate(.8); }
+.VPFeature { border-radius: 8px; }
+.VPContent { padding-bottom: 48px; }
+.home-note { display: flex; align-items: center; gap: 12px; max-width: 720px; margin: 8px auto 0; padding: 14px 18px; border: 1px solid var(--vp-c-divider); border-radius: 8px; color: var(--vp-c-text-2); font-size: 14px; }
+.home-note a { color: var(--vp-c-brand-1); font-weight: 600; text-decoration: none; }
+.home-note-label { color: var(--vp-c-brand-1); font-size: 11px; font-weight: 700; letter-spacing: .08em; }
+.vp-doc h2 { border-top: 1px solid var(--vp-c-divider); padding-top: 24px; }
+.vp-doc img { border-radius: 6px; }
+@media (max-width: 960px) { .VPNavBarTitle { min-width: auto; } .VPDoc { padding: 32px 24px 64px; } }
+@media (max-width: 640px) { .VPHomeHero .name { font-size: 2.5rem; } .home-note { align-items: flex-start; flex-wrap: wrap; gap: 6px 10px; } .vp-doc h1 { font-size: 36px; } }
