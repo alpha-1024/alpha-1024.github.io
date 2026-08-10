@@ -13,6 +13,8 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: '文章', link: '/posts/' },
+      { text: '学习路线', link: '/roadmaps/embodied-ai' },
+      { text: '具身智能教材', link: '/textbook/' },
       { text: '关于', link: '/about' },
       { text: 'GitHub', link: 'https://github.com/alpha-1024' }
     ],
@@ -24,6 +26,24 @@ export default defineConfig({
             { text: '树莓派配置教程', link: '/posts/raspberry-pi-setup' },
             { text: '树莓派磁盘分区问题', link: '/posts/raspberry-pi-disk' },
             { text: '配置 Waline 评论系统', link: '/posts/waline' }
+          ]
+        }
+      ],
+      '/roadmaps/': [
+        {
+          text: '具身智能学习路线',
+          items: [
+            { text: '总路线与执行计划', link: '/roadmaps/embodied-ai' }
+          ]
+        }
+      ],
+      '/textbook/': [
+        {
+          text: '具身智能算法教材',
+          items: [
+            { text: '教材首页与学习方法', link: '/textbook/' },
+            { text: '第一册：数学与工程基础', link: '/textbook/volume-1-foundations' },
+            { text: '第一册实验与答案', link: '/textbook/volume-1-labs' }
           ]
         }
       ]
