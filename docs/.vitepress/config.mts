@@ -61,11 +61,21 @@ export default defineConfig({
               items: [
                 { text: '主教材：视觉与三维感知', link: '/textbook/volume-2-perception' },
                 { text: '相机模型、标定与多视图几何', link: '/textbook/volume-2-camera-geometry' },
-                { text: '图像特征、光流与稀疏重建', link: '/textbook/volume-2-features-multiview' }
+                { text: '图像特征、光流与稀疏重建', link: '/textbook/volume-2-features-multiview' },
+                { text: '深度相机、点云与三维配准', link: '/textbook/volume-2-depth-pointcloud' },
+                { text: '检测、分割与 6D 位姿', link: '/textbook/volume-2-learning-pose' },
+                { text: '结业项目、故障树与全册考试', link: '/textbook/volume-2-capstone' }
               ]
             },
-            { text: '第三册：SLAM 与导航', link: '/textbook/volume-3-slam-navigation' },
-            { text: '第三册实验与答案', link: '/textbook/volume-3-labs' },
+            {
+              text: '第三册：SLAM、导航与感知融合',
+              collapsed: true,
+              items: [
+                { text: '主教材：SLAM 与导航', link: '/textbook/volume-3-slam-navigation' },
+                { text: '状态估计与多传感器融合', link: '/textbook/volume-3-state-estimation' },
+                { text: '基础实验与答案', link: '/textbook/volume-3-labs' }
+              ]
+            },
             { text: '第四册：机械臂规划与控制', link: '/textbook/volume-4-manipulation' },
             { text: '第五册：强化学习与 VLA', link: '/textbook/volume-5-learning-vla' },
             { text: '第五册实验与答案', link: '/textbook/volume-5-labs' },
