@@ -55,7 +55,15 @@ export default defineConfig({
                 { text: '综合实验与答案', link: '/textbook/volume-1-labs' }
               ]
             },
-            { text: '第二册：视觉与三维感知', link: '/textbook/volume-2-perception' },
+            {
+              text: '第二册：视觉与三维感知',
+              collapsed: true,
+              items: [
+                { text: '主教材：视觉与三维感知', link: '/textbook/volume-2-perception' },
+                { text: '相机模型、标定与多视图几何', link: '/textbook/volume-2-camera-geometry' },
+                { text: '图像特征、光流与稀疏重建', link: '/textbook/volume-2-features-multiview' }
+              ]
+            },
             { text: '第三册：SLAM 与导航', link: '/textbook/volume-3-slam-navigation' },
             { text: '第三册实验与答案', link: '/textbook/volume-3-labs' },
             { text: '第四册：机械臂规划与控制', link: '/textbook/volume-4-manipulation' },
