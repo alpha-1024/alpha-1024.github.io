@@ -73,14 +73,37 @@ export default defineConfig({
               items: [
                 { text: '主教材：SLAM 与导航', link: '/textbook/volume-3-slam-navigation' },
                 { text: '状态估计与多传感器融合', link: '/textbook/volume-3-state-estimation' },
+                { text: 'SLAM 前端与里程计', link: '/textbook/volume-3-slam-frontend' },
+                { text: 'SLAM 后端、回环与图优化', link: '/textbook/volume-3-slam-backend' },
+                { text: '地图、定位与全局规划', link: '/textbook/volume-3-mapping-planning' },
+                { text: '局部规划、轨迹跟踪与 Nav2', link: '/textbook/volume-3-local-navigation-nav2' },
+                { text: '结业项目、故障树与全册考试', link: '/textbook/volume-3-capstone' },
                 { text: '基础实验与答案', link: '/textbook/volume-3-labs' }
               ]
             },
-            { text: '第四册：机械臂规划与控制', link: '/textbook/volume-4-manipulation' },
+            {
+              text: '第四册：机械臂规划与控制',
+              collapsed: true,
+              items: [
+                { text: '主教材：机械臂规划与控制', link: '/textbook/volume-4-manipulation' },
+                { text: '建模、运动学与数值 IK', link: '/textbook/volume-4-kinematics' },
+                { text: '轨迹、碰撞与运动规划', link: '/textbook/volume-4-trajectory-planning' },
+                { text: '动力学、接触控制与 ros2_control', link: '/textbook/volume-4-dynamics-control' },
+                { text: 'MoveIt2 与抓取系统', link: '/textbook/volume-4-moveit-grasping' }
+              ]
+            },
             { text: '第五册：强化学习与 VLA', link: '/textbook/volume-5-learning-vla' },
             { text: '第五册实验与答案', link: '/textbook/volume-5-labs' },
             { text: '第六册：CUDA 与部署', link: '/textbook/volume-6-deployment' },
             { text: '第六册实验与验收', link: '/textbook/volume-6-labs' },
+            {
+              text: 'FAST-LIO：从零基础到源码',
+              collapsed: true,
+              items: [
+                { text: '专栏总览与学习路线', link: '/textbook/fastlio/' },
+                { text: '数学预备：向量、矩阵与线性代数', link: '/textbook/fastlio/math-linear-algebra' }
+              ]
+            },
             { text: '术语表与毕业清单', link: '/textbook/glossary-capstone' }
           ]
         }
